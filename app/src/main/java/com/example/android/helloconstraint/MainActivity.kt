@@ -72,3 +72,24 @@ class MainActivity : AppCompatActivity() {
     //Answer:
     //Use the view parameter that is passed to the click handler with setBackgroundColor(): view.setBackgroundColor()
 }
+
+//Ответы на вопросы из 10 задания(раздел Homework) Lesson 1.4:
+
+//Question 1
+//Within an Android Studio project, what menu command can you use to open the list of sample apps? Choose one:
+//
+//Answer: File > New > Import Sample
+
+//Question 2
+//Which buttons does the Basic Activity template provide as part of the UI? Choose two:
+//
+//Answer:
+//Options menu overflow button
+//Floating action button
+
+//Question 3
+//Which source of documentation is the official documentation for Android developers? Choose one:
+//
+//Answer: developer.android.com
+
+
