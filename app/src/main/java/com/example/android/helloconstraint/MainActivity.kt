@@ -1,5 +1,6 @@
 package com.example.android.helloconstraint
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
@@ -10,20 +11,30 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 
+const val EXTRA_MESSAGE = "com.example.android.helloconstraint.extra.MESSAGE"
+
 class MainActivity : AppCompatActivity() {
     private var mCount = 0
     private lateinit var mShowCount: TextView
     private lateinit var zeroButton: AppCompatButton
+    private lateinit var sayHelloButton: AppCompatButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         mShowCount = findViewById(R.id.show_count)
         zeroButton = findViewById(R.id.button_zero)
+        sayHelloButton = findViewById(R.id.button_toast)
     }
 
     fun showToast(view: View) {
         Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT).show()
+    }
+
+    fun startSecondActivity(view: View) {
+        val intent = Intent(this, SecondActivity::class.java)
+        intent.putExtra(EXTRA_MESSAGE, mCount)
+        startActivity(intent)
     }
 
     @RequiresApi(Build.VERSION_CODES.M)

@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Hello Constraint</string>
-    <string name="button_label_toast">Toast</string>
+    <string name="button_label_toast">Say Hello</string>
     <string name="button_label_count">Count</string>
     <string name="button_label_zero">Zero</string>
     <string name="count_initial_value">0</string>
     <string name="toast_message">Hello Toast!</string>
+    <string name="activity2_name">Second Activity</string>
+    <string name="tv_sa_text">Hello!</string>
+    <string name="tv_sa_count_tools_text">0</string>
 </resources>
